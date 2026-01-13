@@ -1,0 +1,291 @@
+
+/* body{
+    background-image: url(/img/back.jpg);
+      background-repeat: no-repeat; 
+      background-attachment: fixed;
+    background-size: cover;
+} */
+
+
+
+.div {
+    margin: 10px 3px ;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(103, 115, 129);
+
+    /* background-image: url(img/back1.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.span {
+    color: rgb(248, 57, 57);
+    font-weight: 600; 
+}
+
+.code-div {
+    margin: 12px 3px ;
+    padding: 8px;
+    border-radius: 8px;
+    background-color:#3f4349;
+}
+
+.code-div-path {
+    margin: 12px 3px ;
+    padding: 8px;
+    border-radius: 8px;
+    background-color:#000000;
+}
+
+.summary {
+    background-color: #6b6d70;
+    padding: 8px 11px;
+    border-radius: 8px;
+    margin: 8px 0px 0px 0px;
+    /* color: #ffffff; */
+    font-weight: bold;
+
+    transition: background-color 0.3s;
+
+
+
+}
+.summary:hover{
+    background-color: #56585a;
+}
+
+details[open]  > summary.summary  {
+    background-color: #5f7391;
+    color: #000000;
+}
+
+
+
+
+
+.black-highlight {
+    background: #5e5d5d;
+    border-radius: 5px;
+    padding: 2px 6px 4px 6px;
+    
+    display: inline-block;   /* ✅ important */
+    margin-bottom: 5px ;
+    margin-top: 5px ;
+
+}
+
+.ordered-list {
+    margin: 8px 0px 2px 0px; 
+    padding: 0px 30px; 
+    line-height: 1.4;
+}
+
+p {
+    margin:0px;
+    /* font-family: verdana; */
+    /* border: 2px solid powderblue; */
+}
+
+p.margin{
+  margin: 1em 0;
+}
+
+h1 {
+    margin:0px;
+}
+
+a {
+    border-radius: 8px; 
+    transition: background-color 0.61s;
+
+    
+}
+
+a:link {
+  background-color: rgb(84, 102, 126);
+  color: white;
+  padding: 7px ;
+  margin: 3px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  
+}
+
+a:visited {
+    background-color: #4f6594;
+    color: #000000;
+}
+
+a:hover, a:active {
+background-color: rgb(57, 79, 107);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+img {
+    width: 65%  ;
+}
+
+
+/*html table */
+
+.regular-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.regular-table th{
+    background-color: sienna;
+}
+
+.regular-table td,
+.regular-table th {
+    border: 2px solid #b11c1c;
+    padding: 8px; 
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 40%;
+}
+
+.regular-table tr{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.regular-table tr:nth-child(odd){
+    background-color: rgb(139, 147, 155);
+}
+
+
+
+/* price table */
+.price-table {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;   /* ✅ important */
+}
+
+.price-table th, 
+.price-table td {
+    border: 1px solid black;
+    padding: 3px;
+    padding: 3px;
+
+    word-break: break-word;
+    min-width: 16%;
+}
+
+
+/* full table styles */ 
+.full-table {
+  /* width: 100%; */
+  border: #000000 1px solid;
+  border-radius: 8px;
+}
+
+.full-table th,
+.full-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+.full-table th {
+  background-color: #e76d6d;
+}
+
+.full-table tr {
+  background-color: #fce4e4;
+}
+
+.full-table tfoot td,
+.full-table tfoot th {
+  background-color: rgb(156, 188, 216);
+}
+
+/* .full-table thead th, */
+.full-table tfoot th  {
+  border-radius: 8px;
+  border: #2b5679 3px solid;
+  border-style: inset;
+}
+
+
+
+/* basic table styles */
+.basic-table{
+  margin-top: 20px;
+}
+
+.basic-table,
+.basic-table td,
+.basic-table th{
+  /* width: 100%; */
+  border: 1px solid black;
+}
+
+
+
+
+/* code box */
+
+.code-box{
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+  
+  border: 3px ;
+  border-style: inset;
+}
+
+.code-box .title{
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  color: rgb(255, 107, 107);
+  margin-bottom: 10px;
+}
+
+.code-box pre{
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  
+}
+
+
+
+/* dotted line for hr tag */
+.hr-dotted {
+border: none; /* Removes the browser's default solid line */
+border-top: 5px dashed rgb(233, 30, 30); /* Adds a dotted top border */
+/* height: 4px; Ensures the element has minimal height */
+}
+
+
+
+
+
+/*🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 */
+
+/*🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 🔻 */
+
+
+
+
+
+
+
+
+
+
+

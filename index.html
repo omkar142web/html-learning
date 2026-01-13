@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+   <script src="js.js"></script>
+
+
+   <link rel="icon" type="image/x-icon" href="img/cloud.png"> 
+
+</head>
+
+
+<body 
+style="
+background-color: lightslategray;  
+font-family: Roboto;
+"
+>
+
+  <br>
+<a href="learn1.html#C4">Jump to Chapter 4 - another html page</a>
+
+<details open >
+<!-- <details > -->
+    <summary class="summary" style="margin: 25px 0px 10px 0px; ">HTML</summary>
+
+<h1 style="font-size:40px;">This is a Heading1 with font-size:40px</h1>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<hr>
+
+<!-- Paragraph  -->
+<p>This is a paragraph</p>
+
+<p style="font-weight: 200;">This is a paragraph of font-weight: 200.</p>
+
+<p style="color:red;">This is a red paragraph.</p>
+
+<p title="I'm a tooltip, using title=&quot; &quot;">Hover me: Title attribute will be displayed as a tooltip when you mouse over the element</p>
+
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both " "      spaces and
+line breaks
+</pre>
+
+
+<hr>
+<!-- styling with style attribute -->
+
+<div class="div" style=" text-align:center;" >
+    <p>
+        <pre style="
+        margin:0px;
+        white-space: pre-wrap ;
+        word-break: break-word;
+        "
+        >background-color  border-radius  text-align:center;</pre>
+    </p>
+
+    <h1 style="background-color: #778da9; 
+    color:#1d2d44; 
+    margin: 8px 3px;  
+    border-radius: 20px; 
+    padding: 11px 38px ; 
+    display: inline-block;
+    word-break: break-word;
+
+    /* padding: 8px clamp(8px, 8vw, 8px);  didnt understand see later */
+
+"  >This is a </h1>
+
+    <p style="background-color: #778da9; 
+    color:#04162e; 
+    margin: 2px 3px 8px 3px;  
+    border-radius: 20px; 
+    padding: 11px 38px; 
+    display: inline-block;
+    word-break: break-word;">This is a paragraph.  (bg-col and col)</p>
+
+</div>
+
+
+
+<div class="div" >
+    <h1 style="font-family:verdana;">This is a heading with font-family:verdana.</h1>
+    <p style="font-family:courier;">This is a paragraph with font-family:courier.</p>
+</div>
+
+
+
+
+<div class="div"  >
+
+    <h1 style="font-size:200%;">This is a heading with font-size: 200% </h1>
+    <p style="font-size:160%;">This is a paragraph.  (font-size: 160%)</p>
+
+</div>
+
+
+
+<div class="div"  >
+
+    <h2 style="text-align:center;">Centered using text-align:center;</h2>
+    <p style="text-align:center;">Centered using text-align:center.</p>
+
+</div>
+
+
+
+<hr>
+<!-- Text Formatting -->
+
+<b>This text is bold using <mark>b </mark>tag</b>
+<br>
+<strong>This text is strong using <mark>strong</mark> tag</strong>
+<br>
+<br>
+<i>This text is italic using <mark>i</mark> tag</i>
+<br>
+<em title="em tag is used to define emphasized text. The content inside is typically displayed in italic.">This text is emphasized using <mark>em</mark> tag</em>
+
+<br>
+<br>
+<ins title="The ins tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.">This text is inserted using <mark>ins</mark> tag</ins>
+<br>
+<u>This text is underlined using <mark>u</mark> tag</u>
+
+<br>
+<p>This is <sub>subscripted</sub> text. using <mark>sub</mark> tag.</p>
+<p>This is <sup>superscripted</sup> text. using <mark>sup</mark> tag.</p>
+
+<br>
+<p>This text is marked using <mark>mark</mark> tag</p>
+
+<del>This text is deleted using <mark>del</mark> tag</del>
+<br>
+<br>
+<small>This text is small using <mark>small</mark> tag</small>
+<br>
+<br>
+
+
+<abbr title="this is full form of some word">abbr</abbr>
+
+
+<hr>
+
+<!-- Quotation and Citation Elements -->
+<p style="color: red;">In this chapter we will go through 
+    6 different HTML elements used for quotation and citation:
+</p>
+    <ol style="color: rgb(66, 34, 209);">
+  <li>q</li>
+  <li>blockquote</li>
+  <li>abbr</li>
+  <li>address</li>
+  <li>cite</li>
+  <li>bdo</li>
+</ol>
+
+
+<div class="div" >
+    <p title="q tag- for Short Quotations">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+</div>
+
+
+
+<div class="div" title="blockquote- for Long Quotations/ The HTML blockquote element defines a section that is quoted from another source." style="background-color: bisque; ">
+
+    <p>Here is a quote from WWF's website:</p>
+
+    <blockquote style="background-color: aqua;">
+        This is a blockquote element. Blockquotes are used to indicate the quotation of a large section of text from another source.
+    </blockquote>
+
+    <p>
+    Source:
+        <a href="http://www.worldwildlife.org/who/index.html" target="_blank">
+            World Wildlife Organization
+        </a>
+    </p>
+
+</div>
+
+
+
+<div class="div" style="background-color: rgb(103, 115, 129);" >
+    <p title="abbr- if want to show full form of some word " >
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+<br>
+        <del>abbr is used here</del>
+    </p>
+</div>
+
+
+
+<div class="div"  title="address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc
+usually renders in italic font.">
+    <address >
+    Written by John Doe.<br>
+    Visit us at:
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA 
+    <br> <del>address is used here</del>
+    </address>
+</div>
+
+
+
+
+<div class="div" style="background-color: rgb(103, 115, 129);">
+    <p title="Cite- tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)
+Note: A person's name is not the title of a work.
+Usually renders in italic."><cite>The Scream</cite> by Edvard Munch. Painted in 1893. <del>cite is used here</del></p>
+</div>
+
+<div class="div" style="background-color: rgb(103, 115, 129);">
+    <bdo dir="rtl" title="This text will be written from right to left - bdo dir=rtl "  >This text will be written from right to left</bdo>
+</div>
+
+
+
+<hr>
+<!-- HTML Colors -->
+
+<h1 style="border:2px solid Tomato; background-color: rgb(87, 103, 122);  color: rgba(94, 210, 245, 0.781); border-radius: 11px; padding: 8px; text-align: center; margin: 10px 3px;">
+    Hello World 
+</h1>
+
+<h1 style="border:2px solid DodgerBlue; background-color:rgb(87, 103, 122); color:rgba(139, 129, 255, 1); border-radius: 11px; padding: 8px; text-align: center; margin: 10px 3px;">
+    Hello World
+</h1>
+
+<h1 style="border:2px solid Violet; background-color:rgb(87, 103, 122); color:rgb(165, 164, 94); border-radius: 11px; padding: 8px; text-align: center; margin: 10px 3px; ">
+    Hello World
+</h1>
+
+<p> 
+    bg-col <br>
+    col <br>
+    border:2px solid Tomato; <br>
+    border-radius: 11px; <br>
+    padding: 8px; <br>
+    text-align: center; <br>
+    is used here
+</p>
+
+
+
+<hr>
+<!-- Styles - CSS -->
+
+<p>CSS can be added to HTML documents in 3 ways:</p>
+
+<ol>
+    <li>External - by using a link> element to link to an external CSS file</li>
+    <li>Internal - by using a style> element in the head> section</li>
+    <li>Inline - by using the style attribute inside HTML elements</li>
+</ol>
+
+ 
+
+<p style="color:red; margin: 3px">A red paragraph.</p>
+<h3 style="color:blue; margin: 3px;">A Blue Heading</h3>
+
+
+<!-- Styles - CSS Display Example -->
+
+<!-- External - by using a link> element to link to an external CSS file -->
+
+<div class="div" style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 8px; font-family: monospace;">
+    <pre style="margin:0px;       white-space: pre-wrap; 
+      word-wrap: break-word;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+    <span style="color: rgb(250, 97, 97);">&lt;link rel="stylesheet" href="styles.css"&gt;</span>
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+  
+&lt;/html&gt;</code></pre>
+</div>
+
+
+
+<!-- Internal - by using a style> element in the head> section -->
+
+<div class="div" style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 8px; font-family: monospace;">
+    <pre style="
+      margin:0px; 
+      white-space: pre-wrap; 
+      word-wrap: break-word;
+      "><code>&lt;html&gt;
+  &lt;head&gt;
+    <span style="color: rgb(250, 97, 97);">&lt;style&gt;
+          body { background-color: powderblue; }
+          h1   { color: blue; }
+          p    { color: red; }
+    &lt;/style&gt;</span>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+
+
+<!-- Inline - by using the style attribute inside HTML elements -->
+
+<div class="div" style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 8px; font-family: monospace;">
+    <pre style="margin:0px;
+          white-space: pre-wrap; 
+      word-wrap: break-word;"><code
+        >&lt;h1 <span style="color: yellow;">style="color:blue;"</span>&gt A Blue Heading&lt;/h1&gt
+&lt;p <span style="color: yellow;">style="color:red;"</span>&gt A red paragraph.&lt;/p&gt</code></pre>
+</div>
+
+
+
+<hr> <!-- -----------------------------------------------------------  -->
+
+<!-- Links - The target Attribute -->
+
+<div class="div">
+    <p>
+        The target attribute specifies where to open the linked document.
+        The target attribute can have one of the following values:
+    </p>
+        <ol style="
+        display: inline-flex; 
+        gap: 10px; 
+        flex-direction: column;
+        padding: 0px 25px;
+        " >
+
+        <li><span style="color: rgb(0, 26, 255);">_self</span> - Default. Opens the document in the same window/tab as it was clicked</li>
+        <li><span style="color: rgb(0, 26, 255);">_blank</span> - Opens the document in a new window or tab</li>
+        <li><span style="color: rgb(0, 26, 255);">_parent</span> - Opens the document in the parent frame</li>
+        <li><span style="color: rgb(0, 26, 255);">_top</span> - Opens the document in the full body of the window</li>
+    </ol>
+</div>
+
+<div class="div">
+    <p>
+        This
+        <a href="https://uploadhub.up.railway.app" target="_blank" >link</a>
+         opens in the another tab - used _blank here
+    </p>
+    <p>Go to page <a href="https://www.google.com/" target="_blank">Google</a></p>
+    <p>Go to page <a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+
+</div>
+
+
+<a href="https://www.google.com/" target="_blank">
+    <img src="img1.png" alt="img alt" width="319" >
+</a>
+<p>Using an Image as a Link</p>
+
+<br>
+<a href="https://mail.google.com/mail/?view=cm&to=omkarpc142@gmail.com" target="_blank">
+  Send email to OP
+</a>
+
+<br>
+  
+<a href="https://www.google.com" target="_blank"  >
+  <button style="padding: 2px 7px ;">Google</button>
+</a>
+
+<br>
+<a href="https://www.wikipedia.org/" target="_blank" title="Go to Wiki">Hover here</a>
+
+
+
+<hr>
+<!-- Create a Bookmark in HTML -->
+
+
+<h2 id="C4" >Chapter 4</h2>
+
+<a href="#C4">Jump to Chapter 4</a>
+
+<br>
+<a href="learn1.html#C4">Jump to Chapter 4 - another html page</a>
+
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    "><code
+        >&lt;h2 id="C4">Chapter 4 &lt;/h2>
+
+&lt;a href="#C4">Jump to Chapter 4 &lt;/a>
+
+&lt;a href="learn1.html#C4">Jump to Chapter 4 - another html page &lt;/a>
+
+Chapter Summary -
+Use the id attribute (id="value") to define bookmarks in a page. Use the href attribute (href="#value") to link to the bookmark </code></pre>
+</div>
+
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >style = " white-space: pre-wrap;  "
+is used above, for word wrapping.</code></pre>
+</div>
+
+
+
+
+<hr>
+
+<!-- images -->
+
+<img src="img1.png" alt="img alt" width="65%" >
+
+<!-- <img src="200.gif" alt="img alt" width="319" > -->
+
+
+<br><br>
+<img src="img.png" alt="img alt" style="font-weight: 800;">
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >The &lt;img> tag has two required attributes:
+        
+        &bull; src - Specifies the path to the image
+        &bull; alt - Specifies an alternate text for the image
+
+    also used - 
+&bull; width & height attributes to control the size of the image
+</code></pre>
+</div>
+
+<!-- <img src="overridingwidth.png" alt="img over riding width" style="width: 1500px;" > -->
+
+<br>
+<br>
+
+<img src="/img/us.png" alt="us animated img" >
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >&lt;img <mark>src="/img/us.png"</mark> alt="us animated img" >
+</code></pre>
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1519638399535-1b036603ac77?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="internet img" >
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; 
+
+padding: 10px; 
+overflow:auto; 
+
+border-radius: 8px; 
+font-family: monospace;
+
+">  <!-- real image -->
+  <img 
+  src="https://images.unsplash.com/photo-1519638399535-1b036603ac77?q=80&w=1031&auto=format&fit=crop"
+       
+  alt="internet img"
+       
+  style="float:left; 
+  width:130px; 
+  margin-right:10px; 
+  border-radius:6px;">
+
+
+  <!-- code block -->
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >&lt;img <mark>src="https://unsplash.com/photo..."</mark> alt="internet img">
+</code></pre>
+</div>
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 10px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >style = " <mark>float:left;</mark> "
+is used above, placing that img. 
+
+style = " <mark>overflow:auto;</mark> "
+is used above, for img fitting.</code></pre>
+</div>
+
+
+
+<hr>
+<!-- Animated Images -->
+
+<h2>Animated Images</h2>
+
+<p>HTML allows moving images:</p>
+<br>
+<img src="https://www.w3schools.com/html/programming.gif" alt="Computer man" style="width:48px;">
+
+
+
+<hr>
+
+<!-- Image with Text -->
+
+<h2>Floating Images</h2>
+<p><strong>Float the image to the right:</strong></p>
+
+<p>
+<img 
+src="https://www.w3schools.com/html/smiley.gif" 
+alt="Smiley face" 
+
+style="
+float:right;
+width:42px;
+height:42px;
+">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
+
+<br>
+
+<p><strong>Float the image to the left:</strong></p>
+<p>
+<img 
+src="https://www.w3schools.com/html/smiley.gif" 
+alt="Smiley face" 
+
+style="
+float:left;
+width:42px;
+height:42px;
+">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+</p>
+
+<br>
+<hr>
+<!-- Image Maps -->
+<h2 id="imagemaps">Image Maps - keyboard & monitor</h2>
+
+
+
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="/img/com.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area 
+    shape="poly"
+    coords="1979,2402,1639,2824,3115,3090,3285,2581" 
+    href="https://en.wikipedia.org/wiki/Computer_keyboard" 
+    target="_blank" 
+    alt="keyboard"  
+    >
+    
+    <area 
+    shape="poly"
+    coords="1778,4,1852,487,1952,483,1944,1697,3999,1884,4107,579,4303,588,4364,0" 
+    href="https://en.wikipedia.org/wiki/Computer_monitor" 
+    target="_blank" 
+    alt="monitor"  
+    >
+    
+    <area 
+    shape="poly"
+    coords="455,888,581,2024,1430,1924,1326,827" 
+    href="https://en.wikipedia.org/wiki/Tablet_computer" 
+    target="_blank" 
+    alt="tablet"  
+    >
+
+</map>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  imageMapResize();
+</script>
+
+
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    "><code
+        >&lt;img src="/img/com.jpg" usemap="#image-map">
+
+&lt;<mark>map name="image-map"</mark>>
+    &lt;area 
+    shape="poly"
+    coords="1979,2402,1639,2824,3115,3090,3285,2581" 
+    href="https://en.wikipedia.org/wiki/Computer_keyboard longgggggggg" 
+    target="_blank" 
+    alt="keyboard"> 
+&lt;/map></code></pre>
+</div>
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    line-height:1.5 ;
+    white-space: pre-wrap; 
+    /* text-align: center; */
+    "><code
+        >style = " <mark>white-space: pre-wrap;</mark> 
+          <mark>word-wrap: break-word;</mark> "
+is used above, for word wrapping.</code></pre>
+</div>
+
+
+<hr>
+<h2>HTML Background Images</h2>
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    "><code
+        >body 
+{
+    background-image: url(/img/back.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}</code></pre>
+</div>
+
+
+
+
+<hr>
+
+<h2 style="color: red;">HTML &lt;picture> Element ⚠️</h2>
+<p>The HTML &lt;picture> element allows you to display different pictures for different devices or screen sizes.</p>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img1.png" >
+  <source media="(min-width: 465px)"  srcset="/img/us.png">
+  <img src="200.gif" >
+</picture>
+
+<picture>
+  <source srcset="img1.png">
+  <source srcset="/img/us.png">
+  <img src="200.gif" >
+</picture>
+
+<hr>
+
+<img src="img1.png" onerror="this.src='200.gif'">
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >&lt;img src="img1.png" <mark>onerror="this.src='200.gif'"</mark>></code></pre>
+</div>
+
+
+<hr>
+
+
+<h2>HTML page Icon</h2>
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    text-align: center;
+    "><code
+        >&lt;link rel="icon" type="image/x-icon" href="/img/cloud.png"> 
+</code></pre>
+</div>
+
+
+<hr>
+
+<!-- HTML Table -->
+<h2>HTML Table</h2>
+
+<table class="regular-table" >
+    <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    /* text-align: center; */
+
+    line-height: 1.4;
+    "><code
+        >table{
+    <mark>border-collapse: collapse;</mark>
+    <mark style="color: rgb(255, 10, 10); ">width: 100%;</mark>
+}
+
+th{
+    background-color: sienna;
+}
+
+td, th{
+    border: 2px solid #b11c1c;
+    padding: 8px; 
+    <mark>word-break: break-word;</mark>
+    overflow-wrap: break-word;
+    <mark><del>max-width: 40%;</del></mark>
+}
+
+tr{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+<mark>tr:nth-child(odd)</mark>{
+    background-color: rgb(139, 147, 155);
+} 
+</code></pre>
+</div>
+
+<!-- NEW - after adding class="regular-table" -->
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+">
+<div style="
+text-align: center;
+margin-top: 0px;
+color: rgb(255, 0, 0);
+">NEW - after adding class="regular-table"</div>
+
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    /* text-align: center; */
+
+    line-height: 1.4;
+    "><code
+        >.regular-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.regular-table th{
+    background-color: sienna;
+}
+
+.regular-table td, th{
+    border: 2px solid #b11c1c;
+    padding: 8px; 
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 40%;
+}
+
+.regular-table tr{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.regular-table tr:nth-child(odd){
+    background-color: rgb(139, 147, 155);
+}</code></pre>
+</div>
+
+
+<br>
+<hr class="hr-dotted">
+<br>
+
+
+<table class="price-table" >
+
+<caption>The &lt;caption&gt; element</caption>
+
+  <colgroup>
+    <col span="2" style="background-color:rgb(192, 82, 82)">
+    <col style="background-color:yellow">
+    <col style="background-color:rgb(111, 109, 212)">
+    <col style="background-color:rgb(192, 82, 82)">
+  </colgroup>
+
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Price</th>
+    <th>Price</th>
+    <th>Title</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+    <td>$53</td>
+    <td>$53</td>
+    <td>My first HTML</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+    <td>$49</td>
+    <td>$49</td>
+    <td>My first CSS and a long titleeeeeeeeeeeeeeeeeeeeeeeeeeeeee</td>
+  </tr>
+</table>
+
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+">
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    /* text-align: center; */
+    line-height: 1.4;
+    "><code
+        >&lt;table class="price-table" >
+
+  <mark>&lt;colgroup></mark>
+    &lt;col span="2" style="background-color:red">
+    &lt;col style="background-color:yellow">
+  <mark>&lt;colgroup></mark></code></pre>
+</div>
+
+
+
+
+
+
+<table class="full-table">
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <td>March</td>
+      <td>$200</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$380</td>
+    </tr>
+    <tr>
+      <th>Sum</th>
+      <th>$380</th>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+<div class="div" style="
+background-color: #2d2d2d; 
+color: #f8f8f2; padding: 15px; 
+border-radius: 8px; 
+font-family: monospace;
+
+border: 3px ;
+border-style: inset;
+">
+<div style="text-align: center; font-weight: 600; font-size: large; color: rgb(255, 107, 107);" >Used here:</div>
+    <pre style="
+    margin:0px;
+    white-space: pre-wrap; 
+    /* text-align: center; */
+    line-height: 1.4;
+    "><code
+><mark>&lt;tr></mark>
+    <mark>&lt;td></mark>January&lt;/td>
+        <span style="color: rgb(99, 171, 199);">or</span>
+    <mark>&lt;th></mark>$100&lt;/th>
+&lt;/tr></code></pre>
+
+
+<ul style="line-height: 2; color: #aed0fc; padding: 5px 15px 0px 15px;
+margin: 20px 0px 0px 0px">
+    <li>&lt;thead></li>
+    <li>&lt;tbody></li>
+    <li>&lt;tfoot></li>
+</ul>
+
+<hr>
+
+<pre style="line-height: 1.5; padding:0; margin:0; " >
+border-radius
+border-style: <mark>inset</mark>;
+
+The following values are allowed:
+</pre>
+
+<ul style="line-height: 2; color: #aed0fc; padding: 1px 15px 0px 15px;
+margin: 0">
+    <li>dotted</li>     
+    <li>dashed</li>     
+    <li>solid</li>     
+    <li>double</li>     
+    <li style="color: #fffb00;">groove</li>     
+    <li>ridge</li>     
+    <li style="color: #f59a4f;">inset</li>     
+    <li style="color: #f59a4f;">outset</li>     
+    <li>none</li>     
+    <li>hidden</li> 
+</ul>
+ 
+
+</div>
+
+
+<br>
+<hr class="hr-dotted">
+
+
+
+
+<h2>Vertical Table Headers</h2>
+
+<p>The first column becomes table headers if you set the first table cell in each table row to a TH element:</p>
+
+<table class="basic-table"  style="width:100%">
+    <caption>Vertical Table Headers</caption>
+  <tr>
+    <th style="text-align: left;">Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th style="text-align: right;">Age</th>  
+    <td>50</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+
+<div class="div code-box">
+  <div class="title">Used here:</div>
+  <pre><code
+    
+    >&lt;table class="basic-table"  style="width:100%">
+    <mark>&lt;caption></mark>Vertical Table Headers&lt;/caption><hr 
+    
+    >&lt;tr>
+    <mark>&lt;th>Firstname&lt;/th></mark>
+    &lt;td>Jill&lt;/td>
+    &lt;td>Eve&lt;/td>
+  &lt;/tr></code></pre><hr
+  
+  >&lt;th style="<mark>text-align</mark>: right;">Age</th>
+</div>
+
+
+<br>
+<hr class="hr-dotted">
+
+<h2>A header that spans two columns</h2>
+
+<p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+<table class="basic-table"  style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<div class="div code-box" >
+  <div class="title" style="margin-bottom: 2px;">Used here:</div>
+  <pre ><code>&lt;tr>
+    &lt;th colspan="2">Name&lt;/th>
+    &lt;th>Age&lt;/th>
+&lt;/tr></code></pre>
+</div>
+
+<br>
+<hr class="hr-dotted">
+
+
+<h2>Cellpadding</h2>
+<p>Cell padding specifies the space between the cell content and its borders.</p>
+
+<style>
+.Cellpadding th
+/* , .Cellpadding td  */
+{
+  padding: 15px;
+}
+.Cellpadding{
+  border-spacing: 10px;
+}
+</style>
+
+<table class="basic-table Cellpadding" >
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<div class="div code-box" style="padding: 7px 11px 11px 11px;" >
+  <div class="title" style="margin-bottom: 2px;">Used here:</div>
+  <pre ><code>&bull; padding: 15px;
+
+&bull; border-spacing: 30px; (for table only)
+</code></pre>
+</div>
+
+
+
+<br>
+<hr class="hr-dotted">
+
+
+<h2>Cell that spans two columns/ rows</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table class="basic-table" style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+
+
+<table class="basic-table" style="width:100%">
+<tr>
+    <th>Name</th>
+    <td>Jill</td>
+</tr>
+
+<tr>
+    <th rowspan="2">Phone</th>
+    <td  >555-1234</td>
+</tr>
+
+<tr>
+    <td>555-1234</td>
+</tr>
+
+<tr>
+    <th rowspan="2" >Info</th>
+    <td  >555-8745</td>
+</tr>
+
+<tr>
+    <td>555-8745</td>
+</tr>
+
+</table>
+
+
+<div class="div code-box">
+  <div class="title">Used here:</div>
+  <pre><code>&lt;tr>
+    &lt;th <mark>colspan="2"</mark> > Name &lt;/th>
+    &lt;th>Age&lt;/th>
+&lt;/tr><hr
+  
+  >&lt;tr>
+    &lt;th <mark>rowspan="2"</mark> > Phone &lt;/th>
+    &lt;td>555-1234&lt;/td>
+&lt;/tr>
+</code></pre>
+</div>
+
+
+<br>
+<hr class="hr-dotted">
+<br>
+
+<a href="learn1.html">another html page</a>
+
+<br>
+
+<a href="#Lists">next topic</a>
+
+
+
+<div style="
+background-color: #ffffff;
+padding: 28px 18px;
+border-radius: 8px;
+margin: 20px 0px;
+">
+
+<style>
+.last-child-td-th th:nth-child(even)
+,.last-child-td-th td:last-child
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+<table class="basic-table last-child-td-th" style="width:100%;
+margin-top: 0px; ">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+<style>
+.Striped th:nth-child(even)
+,.Striped td:nth-child(even)
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+<table class="basic-table Striped" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+
+
+
+<style>
+.last-child-tr th:nth-child(even)
+,.last-child-tr tr:last-child
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+<table class="basic-table last-child-tr" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+
+
+
+<style>
+
+.zebra-striped th:nth-child(even)
+,.zebra-striped tr:nth-child(odd)
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+<table class="basic-table zebra-striped" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+<style>
+
+.combain {
+  border-collapse: collapse;
+}
+
+
+.combain th:nth-child(even)
+,.combain tr:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.combain td:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+</style>
+
+<table class="basic-table combain" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+</div>
+
+
+
+
+<hr class="hr-dotted">
+
+<h2 style="margin-bottom: 0px;">Table Colgroup</h2>
+
+
+
+<div style="
+background-color: #ffffff;
+padding: 18px;
+border-radius: 8px;
+margin: 10px 0px;
+">
+
+<style>
+
+.hide-col {
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+
+
+.hide-col th:nth-child(even)
+,.hide-col tr:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.hide-col td:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+</style>
+
+<table class="basic-table hide-col" style="width:100% ">
+    <caption>Hide columns</caption>
+
+  <colgroup>
+    <col span="1" style="background-color: pink">
+    <col span="1">
+    <col span="2" style="visibility: collapse">
+    <col span="2">
+    <col span="1" style="background-color: pink">
+  </colgroup>
+
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+</div>
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre style="line-height: 1.4;"><code
+    
+    >&lt;colgroup><div class="code-div"
+
+    ><span style="color: rgb(245, 116, 116); font-weight: 600;">&lt;col span="1" style="background-color: pink"></span>  (for monday)</div
+    
+    ><div class="code-div"
+    
+    >&lt;col span="1">   - (for tuesday)
+&lt;col span="2" <mark>style="visibility: collapse"</mark>></div
+    
+    ><div class="code-div"
+    >&lt;col span="2">   - (for friday & saturday)
+&lt;col span="1" style="background-color: pink"></div>&lt;/colgroup></code></pre>
+</div>
+
+<hr>
+
+
+<h2 id="Lists">HTML Lists</h2>
+    
+<div class="div" >
+    <h2 style="margin: 0px; color: #352d77; text-align: center;">An Unordered HTML List</h2>
+    
+    <ul style="margin: 8px 0px 2px 0px; padding: 0px 20px; line-height: 1.4;">
+        <li style="list-style-type:circle;">Coffee</li>
+        <li style="list-style-type:disc;">Tea</li>
+        <li style="list-style-type:square">Coffee</li>
+        <li style="list-style-type:none;">Coffee</li>
+        <hr>
+        <li >Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+</div> 
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre style="line-height: 1.9;"><code>&lt;ul>
+  &lt;li style=<mark>"list-style-type : circle;"</mark>>Coffee&lt;/li>
+  &lt;li style=<mark>"list-style-type : disc;"</mark>>Tea&lt;/li>
+  &lt;li style=<mark>"list-style-type : square"</mark>>Coffee&lt;/li>
+  &lt;li style=<mark>"list-style-type : none;"</mark>>Coffee&lt;/li>
+<hr
+>  &lt;li>Coffee&lt;/li>
+  &lt;li>Tea&lt;/li>
+  &lt;li>Milk&lt;/li>
+&lt;/ul>  </code></pre>
+</div>
+
+
+
+
+
+
+<div class="div" >
+    <h2 style="margin: 0px; color: #352d77; text-align: center;">An Ordered HTML List</h2>
+
+<ol class="ordered-list">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol> 
+<hr>
+
+<ol class="ordered-list" type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<hr>
+
+<ol class="ordered-list" type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<hr>
+
+<ol class="ordered-list" type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+<hr>
+
+<ol class="ordered-list" type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<hr>
+
+<ol class="ordered-list" type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<hr>
+
+<ol class="ordered-list" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<hr>
+
+<ol class="ordered-list" type="A" start="5">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+</div>
+
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code>&lt;ol>
+  &lt;li>Coffee&lt;/li>
+  &lt;li>Tea&lt;/li>
+  &lt;li>Milk&lt;/li>
+&lt;/ol>
+
+&lt;ol <mark>type="A"</mark> >
+
+&lt;ol  type="A" <mark>start="5"</mark>>
+<ul style="margin: 8px 0px 0px 0px; padding: 0px 20px; line-height: 0.7; color: rgb(90, 166, 252); font-weight: 700;">
+ <li>type="A"</li>
+ <li>type="1"</li>
+ <li>type="a"</li>
+ <li>type="I"</li>
+ <li>type="i"</li>
+ <li>start="50"</li>
+</ul></code></pre>
+</div>
+
+
+
+
+
+
+<div class="div" >
+    <h2 style="margin: 0px; color: #352d77; text-align: center;">A Description List</h2>
+
+    <dl style="margin: 8px 0px 2px 0px; padding: 0px 20px; line-height: 1.4;">
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl> 
+</div>
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code>&lt;dl>
+  &lt;dt>Coffee&lt;/dt>
+  &lt;dd>- black hot drink&lt;/dd>
+  &lt;dt>Milk&lt;/dt>
+  &lt;dd>- white cold drink&lt;/dd>
+&lt;/dl></code></pre>
+</div>
+
+
+
+
+
+
+<div class="div" >
+    <h2 style="margin: 0px; color: #352d77; text-align: center;">A Nested List</h2>
+
+    <ul style="margin: 8px 0px 2px 0px; padding: 0px 20px; line-height: 1.4;">
+        <li>Coffee</li>
+        <li>Tea
+            <ol>
+            <li>Black tea</li>
+            <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+</div>
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code>&lt;ul>
+    &lt;li>Coffee&lt;/li>
+    &lt;li>Tea
+
+        &lt;ol>
+            &lt;li>Black tea&lt;/li>
+            &lt;li>Green tea&lt;/li>
+        &lt;/ol>
+
+    &lt;/li>
+    &lt;li>Milk&lt;/li>
+&lt;/ul></code></pre>
+</div>
+
+
+<br>
+
+<hr>
+<h2>HTML Video</h2>
+
+<video 
+width="320" 
+height="240" 
+controls
+muted
+loop 
+poster="https://airpano.com/files/360video/video-kamchatka-bears/images/image2.jpg">
+
+<source src="movkie.ogg" type="video/ogg">
+<source src="img/chircut.mp4" type="video/mp4">
+
+ Your browser does not support the video tag.
+</video>
+
+
+<a href="/img/vidat.png" target="_blank" >
+    <img src="img/vidat.png" alt="video tag attributes">
+</a>
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code><ul style="margin: 0px; padding: 0px 20px; line-height: 0.7; color: rgb(90, 166, 252); font-weight: 700;">
+ <li>width="320"</li>
+ <li>height="240"</li>
+ <li>controls</li>
+ <li>autoplay</li>
+ <li>muted</li>
+ <li>loop</li>
+ <li>preload="auto|metadata|<mark> none </mark>"></li>
+ <li>poster="https://airpano.com/fi.."</li>
+
+ 
+ <li>&lt;source <mark> src="img/chircut.mp4" </mark> type="video/mp4">
+</li>
+</ul></code></pre>
+</div>
+
+
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 10px;"><pre>for <mark> Audio </mark> everything same as vid:</pre></div>
+  <pre style="margin: 0px; line-height: 1.7; color: rgb(90, 166, 252); font-weight: 700;"><code>&lt;audio (attributes) >
+     <mark> &lt;source src="img/chircut.mp4" type="video/mp4"> </mark> 
+&lt;/audio></code></pre>
+</div>
+
+<br>
+<h2>YouTube Videos -</h2>
+
+<hr>
+
+<h2>HTML Button Types</h2>
+
+<form >
+  First name: <input type="text" ><br><br>
+
+  <button type="submit">Submit Form</button>
+  <button type="reset">Reset Form</button>
+</form>
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 5px;">Types used here:</div>
+  <pre><code>&lt;button type="<mark>submit</mark>">Submit Form&lt;/button>
+&lt;button type="<mark>reset</mark>">Reset Form&lt;/button></code></pre>
+</div>
+
+<br>
+<hr class="hr-dotted">
+<br>
+
+<button style="
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+" 
+>Green Button</button>
+
+<br>
+<br>
+
+<p>A disabled button is unclickable:</p>
+<button disabled>Disabled Button</button>
+
+<br>
+<br>
+
+<p>A normal button is unclickable:</p>
+<button onclick="alert('Hello!')">Click Me</button>
+
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre style="line-height: 1.4;"><code
+    
+    >&lt;button><div class="code-div"
+    ><ul style="margin: 0px; padding: 0px 20px; line-height: 0.7; color: rgb(90, 166, 252); font-weight: 700;">
+ <li>background-color: #04AA6D;</li>
+ <li>color: white;</li>
+ <li>font-size: 15px;</li>
+ <li>padding: 12px;</li>
+ <li>border: none;</li>
+ <li>border-radius: 5px;</li>
+ <li>cursor: pointer;</li>
+</ul></div
+    
+    ><div class="code-div"
+    >&lt;button <mark>disabled</mark> > Disabled Button &lt;/button>
+</div
+    
+    ><div class="code-div"
+    >&lt;button <mark>onclick="alert('Hello!')"</mark>> Click Me &lt;/button>
+</div>&lt;/button></code></pre>
+</div>
+
+<br>
+<hr>
+
+
+
+
+
+
+<h2>HTML Iframes</h2>
+
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<br>
+
+<iframe 
+src="https://www.wikipedia.org/" 
+style="height:300px;width:95%"
+title="Iframe Example"
+></iframe>
+<br>
+<br>
+<br>
+
+<p>To <span  style="color: rgb(197, 7, 7); font-weight: 600; font-size: 18px;">remove the default border</span style="color: red;"> of the iframe, use CSS:</p>
+
+<br>
+
+<iframe 
+src="https://www.wikipedia.org/" 
+style="height:300px; width:95%; border:none;"
+title="Iframe Example"
+></iframe>
+<br>
+<br>
+<br>
+
+<p>To <span  style="color: rgb(197, 7, 7); font-weight: 600; font-size: 18px;">change the size, style and color</span style="color: red;"> of the iframe's border:</p>
+
+<br>
+
+<iframe 
+  src="https://www.wikipedia.org/" 
+  style="height:300px; width:95%; border:3px solid rgb(31, 165, 255);"
+  title="Iframe Example">
+</iframe>
+
+
+<br>
+<br>
+<h2 style="margin-bottom: 10px;">Iframe - Target for a Link</h2>
+
+<!-- <p style="font-weight:600;">Iframe Example</p> -->
+<iframe 
+  src="https://www.wikipedia.org/" 
+  name="iframe_a"
+  style="height:300px; width:95%;"
+  title="Iframe Example">
+</iframe>
+<br>
+
+<span 
+style="margin-right: 10px;">
+  <a 
+    href="https://www.wikipedia.org/" target="iframe_a"
+    >Back to wikipedia.com
+  </a>
+</span>
+
+
+<span 
+style="margin-right: 10px;">
+
+  <a 
+    href="https://en.wikipedia.org/wiki/Computer" 
+    target="iframe_a"
+    >Computer
+  </a>
+
+</span>
+
+
+<span 
+style="margin-right: 10px;">
+
+  <a 
+    href="https://en.wikipedia.org/wiki/HTML" 
+    target="iframe_a"
+    >HTML
+  </a>
+
+</span>
+
+
+<span 
+style="margin-right: 10px;">
+
+  <a 
+    href="https://en.wikipedia.org/wiki/CSS" 
+    target="iframe_a"
+    >CSS
+  </a>
+
+</span>
+
+
+<br>
+<br>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 8px;">Used here:</div>
+  <pre style="line-height: 1.4;"><code
+    
+    ><div class="code-div"
+    ><ul style="margin: 0px; padding: 5px 20px; line-height: 1; color: rgb(90, 166, 252); font-weight: 700;"><li>border: none;</li>
+<li>border:3px solid rgb(31, 165, 255);</li></ul></div
+    
+    ><div class="code-div"
+    > &lt;iframe 
+    <mark>src="https://www.wikipedia.org/"</mark> 
+
+    style="
+    height:300px; width:425px; 
+    border:3px solid rgb(31, 165, 255);"
+    
+    <del>title="Iframe Example"</del>>
+    <mark>name="iframe_a"</mark>
+  &lt;/iframe></div
+
+    ><div class="code-div"
+    >&lt;a 
+    href="https://en.wikipedia.org/wiki/CSS" 
+    <mark>target="iframe_a"</mark>
+    >CSS
+&lt;/a>
+</div></code></pre>
+</div>
+
+<br>
+<hr>
+
+
+
+<div class="div code-box">
+  <div class="title" style="margin-bottom: 13px;">Used here:</div>
+  <pre><code>Sure ✅ I’ll explain each one with a real folder example.
+<hr>
+
+✅ Folder structure example
+<div class="code-div-path" ><span style="color: rgb(248, 57, 57); font-weight: 600; ">Project</span>/
+  │
+  ├── picture.jpg
+  ├── index.html
+  │
+  ├── images/
+  │   └── picture.jpg
+  │
+  └── pages/
+      └── contact.html</div>Assume you are writing code inside:
+📄 `pages/contact.html`
+<hr
+
+><div class="code-div-path">1️⃣ Same folder
+  html
+  <span class="span">&lt;img src="picture.jpg"></span>
+  
+  ✅ Meaning: image is in same folder as contact.html
+  
+  Browser looks for:
+  project/pages/picture.jpg
+</div><hr
+
+
+
+><div class="code-div-path" >2️⃣ Inside images folder (current folder)
+  html
+  <span class="span">&lt;img src="images/picture.jpg"></span>
+
+  ✅ Meaning: inside pages/images/
+
+  Browser looks for:
+  project/pages/images/picture.jpg</div><hr
+
+
+
+
+
+><div class="code-div-path" >3️⃣ From root images folder
+  html
+  <span class="span">&lt;img src="/images/picture.jpg"></span>
+
+  ✅ Meaning: start from root of website/project
+
+  Browser looks for:
+  project/images/picture.jpg
+
+  Works from ANY page.</div><hr
+  
+  
+  
+  
+  
+  ><div class="code-div-path" >4️⃣ One folder back (parent folder)
+  html
+  <span class="span">&lt;img src="../picture.jpg"></span>
+
+  ✅ Meaning: go one level up from pages/
+
+  Browser looks for:
+  project/picture.jpg
+</div><hr
+
+
+
+
+><div class="code-div-path"  >🧠 Easy memory trick
+&bull; <span class="black-highlight">picture.jpg</span> → same folder
+&bull; <span class="black-highlight">images/picture.jpg</span> → inside current folder images/
+&bull; <span  class="black-highlight">/images/picture.jpg</span> → root images/
+&bull; <span  class="black-highlight">../picture.jpg</span> → one folder back</div></code></pre>
+</div>
+
+<br>
+<hr>
+
+<details>
+  <summary>What is Netflix?</summary>
+  <p>Netflix is a streaming service...</p>
+</details>
+
+<details>
+  <summary >How much does Netflix cost?</summary>
+  <p>Plans range from ₹149 to ₹649/month.</p>
+</details>
+
+
+<details open>
+  <summary class="summary">How this works ?</summary>
+  <div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code>&lt;details>
+  &lt;summary>What is Netflix?&lt;/summary>
+  &lt;p>Netflix is a streaming service...&lt;/p>
+&lt;/details>
+<hr style="margin: 15px 0px;"
+
+><span>&lt;details open name="requirements"> <mark>(if 2 details have same name, then only one why open at one time)</mark></span></code></pre>
+</div>
+</details>
+
+<!-- <div class="div code-box">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre><code>&lt;details>
+  &lt;summary>What is Netflix?&lt;/summary>
+  &lt;p>Netflix is a streaming service...&lt;/p>
+&lt;/details></code></pre>
+</div> -->
+
+<hr>
+
+<h1>Remaining : </h1>
+<h2>Responsive Web Page </h2>
+<h2>Forms</h2>
+
+
+</details>
+
+<hr style="border: 1px solid red;">
+
+
+
+
+
+
+
+
+
+
+
+
+<details open >
+    <summary class="summary" style="margin: 25px 0px 10px 0px; ">CSS</summary>
+
+<!-- <details open > -->
+<details  >
+<summary class="summary" style="margin: 25px 0px 10px 0px; ">CSS background-color
+</summary>
+
+<style>
+.transparent  {
+  background-color: rgb(27, 75, 114);
+}
+
+.first {
+  opacity: 0.1;
+}
+
+.second {
+  opacity: 0.3;
+}
+
+.third {
+  opacity: 0.6;
+}
+
+
+</style>
+<br>
+<h1>Transparent Boxes</h1>
+<br>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+<br>
+<div class="first transparent">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="second transparent">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third transparent">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div class="transparent">
+  <h1>opacity 1 (default)</h1>
+</div>
+
+
+<br>
+<br>
+
+<h1>Transparent Boxes 2</h1>
+
+<p style="color: red; margin: 15px 0px 10px 0px;">Result with <mark>opacity</mark>:</p>
+
+<div  style="opacity:0.1; background: green">
+  <h1>10% opacity</h1> 
+</div>
+
+<div style="opacity:0.3; background: green">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6; background: green">
+  <h1>60% opacity</h1>
+</div>
+
+<div style=" background: green">
+  <h1>opacity 1</h1>
+</div>
+
+
+
+<div class="div code-box" style="padding-bottom: 8px;">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre style="line-height: 1.4;"><code
+    
+    >style = &quot;<div class="code-div" style="background-color: black;"
+    ><ul style="margin: 0px; padding: 0px 20px; line-height: 0.7; color: rgb(90, 166, 252); font-weight: 700;"> <li>opacity:0.1; background: green</li>
+ <li>opacity:0.3; background: green</li>
+ <li>opacity:0.6; background: green</li>
+ <li>background: green</li> </ul></div>&quot;</code></pre></div>
+
+
+
+
+
+
+
+
+
+<p style="color: red; margin: 15px 0px 10px 0px;">Result with <mark>rgba()</mark>:</p>
+
+<div  style="background: rgba(0, 128, 0, 0.1);">
+  <h1>10% opacity</h1> 
+</div>
+
+<div style="background: rgba(0, 128, 0, 0.3);">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="background: rgba(0, 128, 0, 0.6);">
+  <h1>60% opacity</h1>
+</div>
+
+<div style=" background: rgba(0, 128, 0);">
+  <h1>default</h1>
+</div>
+
+<div class="div code-box" style="padding-bottom: 8px;">
+  <div class="title" style="margin-bottom: 0px;">Used here:</div>
+  <pre style="line-height: 1.4;"><code
+    
+    >style = &quot;<div class="code-div" style="background-color: black;"
+    ><ul style="margin: 0px; padding: 0px 20px; line-height: 0.7; color: rgb(90, 166, 252); font-weight: 700;"> <li>background: rgba(0, 128, 0, 0.1);</li>
+ <li>background: rgba(0, 128, 0, 0.3);</li>
+ <li>background: rgba(0, 128, 0, 0.6);</li>
+ <li>background: rgba(0, 128, 0);</li> </ul></div>&quot;</code></pre></div>
+
+
+<!-- <hr style="border: 5px solid rgb(38, 95, 141); margin-top: 30px;"> -->
+
+
+</details>
+
+
+
+
+<details open >
+<summary class="summary" style="margin: 25px 0px 10px 0px; ">CSS background-image
+</summary>
+
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
+
+<br>
+<br>
+
+<hr>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+
+</html>

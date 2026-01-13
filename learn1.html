@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+}
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+<style>
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  justify-content:center;
+  align-items:center;
+
+}
+
+.modal:target{
+  display:flex;
+}
+
+.modal img{
+  /* max-width:80%; 
+  max-height:80%; */
+
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+
+
+.modal-box{
+  border: 3px solid #5f7391;
+  padding: 10px;
+  width: fit-content;     /* ✅ auto size */
+  
+}
+
+
+
+.closemodal{
+  position:absolute; 
+  top:20px; right:30px; 
+  color:white; 
+  font-size:30px;}
+  
+a.x{
+  text-decoration: none;
+}
+
+
+
+
+
+a.jump {
+    border-radius: 8px; 
+    transition: background-color 0.61s;
+
+    
+}
+
+a.jump:link {
+  background-color: rgb(84, 102, 126);
+  color: white;
+  padding: 7px ;
+  margin: 3px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  
+}
+
+a.jump:visited {
+    background-color: #4f6594;
+    color: #000000;
+}
+
+a.jump:hover, a.jump:active {
+background-color: rgb(57, 79, 107);
+}
+
+
+</style>
+
+<br>
+<a class="jump" href="learn.html">Jump to Chapter 4 - another html page</a>
+
+<br> 
+<br> 
+
+
+<a href="#modal" ><img src="img1.png" width="250"></a>
+
+<!-- <div  id="modal" class="modal">
+  
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <a href="#" class="closemodal x">✖️</a>
+    <img src="img1.png">
+  </div>
+
+</div> -->
+
+
+<a id="modal" class="modal" href="#">
+  <div class="modal-box">
+    <img src="img1.png">
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<hr>
+
+
+<style>
+
+  .summary {
+    background-color: #6b6d70;
+    padding: 8px 11px;
+    border-radius: 8px;
+    margin: 8px 0px 0px 0px;
+    /* color: #ffffff; */
+    font-weight: bold;
+
+    transition: background-color 0.3s;
+
+
+
+}
+.summary:hover{
+    background-color: #56585a;
+}
+
+details[open] .summary {
+    background-color: #5f7391;
+    color: #000000;
+}
+
+</style>
+
+<details>
+  <summary class="summary" style="margin: 25px 0px 10px 0px;" > open tables</summary>
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+
+
+
+<style>
+.last-child-td-th th:nth-child(even)
+,.last-child-td-th td:last-child
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+<table class="last-child-td-th" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+<style>
+.Striped th:nth-child(even)
+,.Striped td:nth-child(even)
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+
+<table class="Striped" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+
+
+
+<style>
+.last-child-tr th:nth-child(even)
+,.last-child-tr tr:last-child
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+
+<table class="last-child-tr" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+
+
+
+<style>
+
+.zebra-striped th:nth-child(even)
+,.zebra-striped tr:nth-child(odd)
+{
+  background-color: #D6EEEE;
+}
+</style>
+
+
+<table class="zebra-striped" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+
+
+
+
+<style>
+
+.combain {
+  border-collapse: collapse;
+}
+
+
+.combain th:nth-child(even)
+,.combain tr:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.combain td:nth-child(even)
+{
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+</style>
+
+
+<table class="combain" style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<br>
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+

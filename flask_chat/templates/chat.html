@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">
+    <div>
+      <b>Room:</b> {{ room }} <br>
+      <small>You are: {{ username }}</small>
+    </div>
+    <a class="logout" href="/logout">Logout</a>
+  </div>
+
+  <div class="chat-messages" id="messages">
+
+    <!-- OLD messages from SQLite -->
+    {% for m in old_msgs %}
+      <div class="msg {{ 'sent' if m.sender==username else 'received' }}">
+        <b>{{m.sender}}:</b> {{m.text}}
+        <div class="time">{{m.time}}</div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="chat-input">
+    <input id="text" type="text" placeholder="Type message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  const socket = io();
+
+  const username = "{{ username }}";
+  const room = "{{ room }}";
+
+  const messagesDiv = document.getElementById("messages");
+  const input = document.getElementById("text");
+
+  // join room
+  socket.emit("join_room", {username, room});
+
+  // receive new messages
+  socket.on("new_message", (data) => {
+    const msgDiv = document.createElement("div");
+    msgDiv.className = "msg " + (data.sender === username ? "sent" : "received");
+
+    msgDiv.innerHTML = `
+      <b>${data.sender}:</b> ${data.text}
+      <div class="time">${data.time}</div>
+    `;
+
+    messagesDiv.appendChild(msgDiv);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  });
+
+  // room status
+  socket.on("status", (data) => {
+    const status = document.createElement("div");
+    status.className = "status";
+    status.textContent = data.msg;
+    messagesDiv.appendChild(status);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  });
+
+  function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+
+    socket.emit("send_message", {sender: username, room, text});
+    input.value = "";
+  }
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendMessage();
+  });
+
+  window.addEventListener("beforeunload", () => {
+    socket.emit("leave_room", {username, room});
+  });
+</script>
+
+</body>
+</html>
